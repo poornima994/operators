@@ -25,21 +25,21 @@ Sample input and output 2:
 
 '''
 def calculate_extras(no_balls, wides, byes, leg_byes, penalties):
-    # Each type of extra contributes runs as follows
+    
     total_extras = (no_balls + wides + byes + leg_byes) + (penalties * 5)
     return total_extras
 
-# Main program
+
 if __name__ == "__main__":
-    # Input the number of extras
+   
     no_balls = int(input())
     wides = int(input())
     byes = int(input())
     leg_byes = int(input())
     penalties = int(input())
     
-    # Calculate total runs from extras
+   
     total_extras = calculate_extras(no_balls, wides, byes, leg_byes, penalties)
     
-    # Display the result
+   
     print(total_extras)
